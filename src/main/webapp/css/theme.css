@@ -133,6 +133,13 @@ body{
     padding: 1em;
 }
 
+#userdetails-inner h1{
+    padding-left: 1em;
+    font-family: 'Caveat',Source Sans Pro,"Trebuchet MS",Arial,sans-serif;
+    font-size: 3em;
+    color: #2f2f2f;
+}
+
 #grid{
     background: url('https://www.nordangliaeducation.com/resources/asia/_cms-site-content/_school-master/img/illustration-ourSchool.png');
     background-repeat: no-repeat;

@@ -56,8 +56,9 @@ if (cookies != null) {
 			<% if (identity != null ) { %>
 				<div id="userdetails">				
 					<div id="userdetails-inner">
+						<h1>SAML Response</h1>
 				<table border="0" cellpadding="5">
-					<tr><td>SAML Subject:</td><td><%= identity.getSubject() %></td></tr>
+					<tr><td><b>Subject:</b></td><td><%= identity.getSubject() %></td></tr>
 				<%
 					Bag attributes = identity.getAttributes();
 					Set keySet = attributes.keySet();
