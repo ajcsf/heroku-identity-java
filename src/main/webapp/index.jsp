@@ -53,7 +53,29 @@ if (cookies != null) {
 		<div id="middle">
 			<div id="imagebanner"></div>
 			<div id="blueline"></div>
-
+			<% if (identity != null ) { %>
+				<div id="userdetails">				
+				<p>SAML Subject: <%= identity.getSubject() %></p>
+				<table border="0" cellpadding="5">
+				<%
+					Bag attributes = identity.getAttributes();
+					Set keySet = attributes.keySet();
+					Iterator iterator = keySet.iterator();
+					while (iterator.hasNext()){
+						String key = (String)iterator.next();
+						%><tr><td><b><%= key %>:</b></td><td><%
+						ArrayList<String> values = (ArrayList<String>)attributes.getValues(key);
+						for (String value : values) {
+							%><%= value %><br/><%
+						}
+						%></td></tr><%
+				
+					}
+				
+				%>
+				</table>				
+				</div>
+				<% } %>
 			<div id="grid">
 				<h1>About Nord Anglia Education</h1>
 				<ul>
@@ -120,29 +142,7 @@ if (cookies != null) {
 		</div> <!-- end footer //-->
 	</div> <!-- end container //-->
 
-<% if (identity != null ) { %>
-<center>
-<h2><%= identity.getSubject() %></h2>
-<table border="0" cellpadding="5">
-<%
-	Bag attributes = identity.getAttributes();
-	Set keySet = attributes.keySet();
-	Iterator iterator = keySet.iterator();
-	while (iterator.hasNext()){
-		String key = (String)iterator.next();
-		%><tr><td><b><%= key %>:</b></td><td><%
-		ArrayList<String> values = (ArrayList<String>)attributes.getValues(key);
-		for (String value : values) {
-			%><%= value %><br/><%
-		}
-		%></td></tr><%
 
-	}
-
-%>
-</table>
-</center>
-<% } %>
 
 
 </body>
