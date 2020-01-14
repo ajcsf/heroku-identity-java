@@ -55,8 +55,9 @@ if (cookies != null) {
 			<div id="blueline"></div>
 			<% if (identity != null ) { %>
 				<div id="userdetails">				
-				<p>SAML Subject: <%= identity.getSubject() %></p>
+					<div id="userdetails-inner">
 				<table border="0" cellpadding="5">
+					<tr><td>SAML Subject:</td><td><%= identity.getSubject() %></td></tr>
 				<%
 					Bag attributes = identity.getAttributes();
 					Set keySet = attributes.keySet();
@@ -73,7 +74,8 @@ if (cookies != null) {
 					}
 				
 				%>
-				</table>				
+				</table>
+				</div>			
 				</div>
 				<% } %>
 			<div id="grid">
