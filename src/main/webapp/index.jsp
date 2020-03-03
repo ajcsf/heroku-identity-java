@@ -14,7 +14,7 @@ if (cookies != null) {
 
 <html>
 <head>
-<title>Nord Anglia</title>
+<title>North Atlas</title>
 <link rel="stylesheet" type="text/css" href="/css/theme.css">
 <link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -24,7 +24,9 @@ if (cookies != null) {
 		<div id="header">
 			<div id="header-inner">
 			<div id="header-left">
-				<img width="420" height="38.78" src="https://www.nordangliaeducation.com/_cms-site-content/_corporate2/i/corporate-nae-logo-2015.png"/>
+				<!-- <img width="420" height="38.78" src="https://www.nordangliaeducation.com/_cms-site-content/_corporate2/i/corporate-nae-logo-2015.png"/> //-->
+				<img height="70" src="https://res.cloudinary.com/ajc-sf-dev/image/upload/c_thumb,h_70,g_face/v1583162267/nord/north-atlas-logo_gmsfgx.png"/>
+				
 			</div>
 			<div id="header-right">
 				<% if (identity == null ) { %>
@@ -80,14 +82,14 @@ if (cookies != null) {
 				</div>
 				<% } %>
 			<div id="grid">
-				<h1>About Nord Anglia Education</h1>
+				<h1>About North Atlas Education</h1>
 				<ul>
 					<li>
 						<div><img width="100%" src="https://img.nordangliaeducation.com/resources/asia/_filecache/de2/f79/145684-cropped-w300-h220-of-1-FFFFFF-about-nae.jpg"/></div>
 						<div class="innerblue">
-							<span class="heading">About Nord Anglia Education</span>
+							<span class="heading">About North Atlas Education</span>
 							<p class="text">
-								Nord Anglia offers a world leading education to students aged 2 to 18. We are a global family of more than 64,000 ambitious learne...
+								North Atlas offers a world leading education to students aged 4 to 18. We are a global family of more than 14,000 ambitious learne...
 							</p>
 						</div>
 					</li>
@@ -96,16 +98,16 @@ if (cookies != null) {
 						<div class="innerblue">
 							<span class="heading">Our Schools in Action</span>
 							<p class="text">                                    
-								Nord Anglia Education schools are hubs of activity. We provide outstanding opportunities for your child to explore their interests...                                                
+								North Atlas Education schools are hubs of activity. We provide outstanding opportunities for your child to explore their interests...                                                
 							</p>
 						</div>
 					</li>
 					<li>
 						<div><img width="100%" src="https://img.nordangliaeducation.com/resources/asia/_filecache/dc3/33d/29030-cropped-w300-h220-of-1-FFFFFF-beijing-sanlitun_173_crop.jpg"/></div>
 						<div class="innerblue">
-							<span class="heading">Why choose a Nord Anglia Education school?</span>
+							<span class="heading">Why choose a North Atlas Education school?</span>
 							<p class="text">                                    
-								Discover why your child will love a Nord Anglia education                                                 
+								Discover why your child will love a North Atlas education                                                 
 							</p>
 						</div>
 					</li>
